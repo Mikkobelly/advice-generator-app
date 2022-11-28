@@ -47,7 +47,7 @@ h1 {
 }
 
 .line {
-    width: 220px;
+    width: 200px;
     height: 0;
     border: none;
     border-bottom: hsla(193, 38%, 86%, 0.203) solid 2px;
@@ -70,7 +70,7 @@ h1 {
 
 .generate-button {
     position: absolute;
-    left: 44.5%;
+    left: 45%;
     bottom: -35px;
     background-color: hsl(150, 100%, 66%);
     border: none;
@@ -89,19 +89,21 @@ h1 {
     .container {
         width: 300px;
         max-height: 400px;
-        padding: 0 5% 15%;
+        padding: 0 2% 12%;
     }
 
     .line {
-        width: 100px;
+        width: 110px;
     }
 
     .content {
         max-width: 250px;
+        font-size: 25px;
+        margin: 28px 0 0;
     }
 
     .generate-button {
-        left: 40%;
+        left: 39%;
     }
 
 }
