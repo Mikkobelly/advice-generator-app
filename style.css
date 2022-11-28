@@ -3,17 +3,32 @@ html {
     font-family: 'Manrope', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     background-color: hsl(218, 23%, 16%);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+}
+
+body,
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
-    font-weight: 800;
-    color: hsl(193, 38%, 86%);
+}
+
+.title,
+.content,
+.deco {
+    margin: 50px 0 0;
 }
 
 h1 {
@@ -22,11 +37,6 @@ h1 {
 
 .container {
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
     position: relative;
     background-color: hsl(217, 19%, 24%);
     border-radius: 30px;
@@ -35,7 +45,7 @@ h1 {
 }
 
 .title {
-    font-size: 16px;
+    font-size: 1rem;
     color: hsl(150, 100%, 66%);
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -86,20 +96,27 @@ h1 {
 }
 
 @Media (max-width: 780px) {
+
+    .title,
+    .content,
+    .deco {
+        margin: 28px 0 0;
+    }
+
     .container {
         width: 300px;
         max-height: 400px;
         padding: 0 2% 12%;
     }
 
-    .line {
-        width: 110px;
-    }
-
     .content {
         max-width: 250px;
         font-size: 25px;
-        margin: 28px 0 0;
+
+    }
+
+    .line {
+        width: 110px;
     }
 
     .generate-button {
